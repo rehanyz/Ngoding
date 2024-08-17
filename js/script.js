@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Sample ticket data
   const tickets = [
-    { id: 1, name: "Bus Jakarta to Bandung ", description: "Comfortable bus with AC.", price: "$25" },
-    { id: 2, name: "Bus B to City Y", description: "Economical bus with basic amenities.", price: "$15" },
-    { id: 3, name: "Bus C to City Z", description: "Luxury bus with Wi-Fi and meals.", price: "$45" },
+    { id: 1, name: "Bus A to City X", description: "Comfortable bus with AC and spacious seating.", price: "$25", image: "images/bus-a.jpg" },
+    { id: 2, name: "Bus B to City Y", description: "Economical bus with basic amenities and free Wi-Fi.", price: "$15", image: "images/bus-b.jpg" },
+    { id: 3, name: "Bus C to City Z", description: "Luxury bus with Wi-Fi, meals, and reclining seats.", price: "$45", image: "images/bus-c.jpg" },
   ];
 
   // Populate ticket list
@@ -25,7 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const id = params.get("id");
     const ticket = tickets.find((t) => t.id == id);
     if (ticket) {
-      ticketDescription.innerHTML = `<h2>${ticket.name}</h2><p>${ticket.description}</p><p>Price: ${ticket.price}</p><a href="purchase.html?id=${ticket.id}">Purchase Ticket</a>`;
+      ticketDescription.innerHTML = `
+              <h2>${ticket.name}</h2>
+              <img src="${ticket.image}" alt="${ticket.name}">
+              <p>${ticket.description}</p>
+              <p>Price: ${ticket.price}</p>
+              <a href="purchase.html?id=${ticket.id}" class="btn">Purchase Ticket</a>
+          `;
     } else {
       ticketDescription.innerHTML = `<p>Ticket not found.</p>`;
     }

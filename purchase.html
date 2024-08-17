@@ -3,33 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Purchase Ticket</title>
+    <title>Bus Ticketing | Purchase Ticket</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <h1>Purchase Your Ticket</h1>
+      <div class="logo">
+        <img src="images/logo.png" alt="Bus Ticketing Logo" />
+      </div>
       <nav>
         <a href="index.html">Home</a>
         <a href="list.html">View Tickets</a>
+        <a href="#about">About Us</a>
       </nav>
     </header>
     <main>
-      <form id="purchase-form">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required />
+      <section class="purchase">
+        <h1>Purchase Your Ticket</h1>
+        <form id="purchase-form">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-        <label for="ticket">Ticket:</label>
-        <select id="ticket" name="ticket">
-          <!-- Ticket options will be inserted here by JavaScript -->
-        </select>
+          <label for="ticket">Ticket:</label>
+          <select id="ticket" name="ticket">
+            <!-- Ticket options will be inserted here by JavaScript -->
+          </select>
 
-        <button type="submit">Purchase</button>
-      </form>
+          <button type="submit" class="btn">Purchase</button>
+        </form>
+      </section>
     </main>
+    <footer>
+      <p>&copy; 2024 Bus Ticketing. All Rights Reserved.</p>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

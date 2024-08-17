@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -10,12 +10,21 @@ header {
   color: #fff;
   padding: 10px 0;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header .logo img {
+  height: 50px;
 }
 
 header nav a {
   color: #fff;
   margin: 0 15px;
   text-decoration: none;
+  font-size: 16px;
 }
 
 main {
@@ -37,4 +46,87 @@ ul li {
   margin-bottom: 10px;
   padding: 15px;
   border: 1px solid #ccc;
+}
+
+.hero {
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background-color: #218838;
+}
+
+.about {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.purchase form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.purchase form label {
+  margin-top: 15px;
+}
+
+.purchase form input,
+.purchase form select {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.purchase form .btn {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.purchase form .btn:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
 }

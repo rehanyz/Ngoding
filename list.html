@@ -3,21 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Available Tickets</title>
+    <title>Bus Ticketing | Available Tickets</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <h1>Available Bus Tickets</h1>
+      <div class="logo">
+        <img src="images/logo.png" alt="Bus Ticketing Logo" />
+      </div>
       <nav>
         <a href="index.html">Home</a>
+        <a href="list.html">View Tickets</a>
+        <a href="#about">About Us</a>
       </nav>
     </header>
     <main>
-      <ul id="ticket-list">
-        <!-- Ticket items will be inserted here by JavaScript -->
-      </ul>
+      <section class="tickets">
+        <h1>Available Bus Tickets</h1>
+        <p>Select from a variety of routes and services to find the perfect ticket for your journey.</p>
+        <ul id="ticket-list">
+          <!-- Ticket items will be inserted here by JavaScript -->
+        </ul>
+      </section>
     </main>
+    <footer>
+      <p>&copy; 2024 Bus Ticketing. All Rights Reserved.</p>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
