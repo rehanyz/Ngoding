@@ -130,3 +130,32 @@ footer {
   padding: 10px 0;
   margin-top: 40px;
 }
+/* Logo */
+.logo img {
+  height: auto; /* Menjaga proporsi gambar */
+  max-width: 150px; /* Atur lebar maksimum logo */
+}
+
+/* Gambar latar belakang hero */
+.hero {
+  background-image: url("../images/hero.jpg");
+  background-size: cover; /* Mengisi area dengan gambar tanpa merusak proporsi */
+  background-position: center; /* Pusatkan gambar */
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* Gambar tiket */
+.ticket-image {
+  width: 100%; /* Agar gambar menyesuaikan dengan lebar elemen kontainernya */
+  height: auto; /* Menjaga proporsi gambar */
+  max-width: 400px; /* Atur lebar maksimum gambar tiket */
+}
+
+/* Gambar di halaman About Us */
+.about img {
+  width: 100%; /* Agar gambar menyesuaikan dengan lebar elemen kontainernya */
+  height: auto; /* Menjaga proporsi gambar */
+  max-width: 800px; /* Atur lebar maksimum gambar */
+}

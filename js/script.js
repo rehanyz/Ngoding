@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Sample ticket data
   const tickets = [
-    { id: 1, name: "Bus A to City X", description: "Comfortable bus with AC and spacious seating.", price: "$25", image: "images/bus-a.jpg" },
+    { id: 1, name: "Bus Jakarta to Bandung", description: "Bus yang nyaman dengan AC dan tempat duduk yang luas.", price: "Rp.500.000", image: "images/bus-a.png" },
     { id: 2, name: "Bus B to City Y", description: "Economical bus with basic amenities and free Wi-Fi.", price: "$15", image: "images/bus-b.jpg" },
     { id: 3, name: "Bus C to City Z", description: "Luxury bus with Wi-Fi, meals, and reclining seats.", price: "$45", image: "images/bus-c.jpg" },
   ];
